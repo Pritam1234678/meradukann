@@ -2,7 +2,6 @@ import { vitePlugin as remix } from "@remix-run/dev";
 import { installGlobals } from "@remix-run/node";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { vercelPreset } from "@remix-run/dev/presets/vercel"; // <-- ADD THIS IMPORT LINE
 
 installGlobals({ nativeFetch: true });
 
@@ -53,7 +52,6 @@ export default defineConfig({
   },
   plugins: [
     remix({
-      presets: [vercelPreset()], // <-- ADD THIS PRESETS LINE
       ignoredRouteFiles: ["**/.*"],
       future: {
         v3_fetcherPersist: true,
