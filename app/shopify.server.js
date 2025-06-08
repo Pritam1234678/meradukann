@@ -1,4 +1,4 @@
-import "@shopify/shopify-app-remix/adapters/node"; // <-- REVERTED TO 'node'
+import "@shopify/shopify-app-remix/adapters/node"; // <-- THIS IS REVERTED TO 'node'
 import {
   ApiVersion,
   AppDistribution,
