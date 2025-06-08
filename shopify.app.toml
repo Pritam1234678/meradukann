@@ -3,8 +3,9 @@
 client_id = "270763c46529709da6afbb8778458560"
 name = "promo-banner-app"
 handle = "promo-banner-app-4"
-application_url = "https://example.com/"
+application_url = "https://meradukann.vercel.app"
 embedded = true
+
 
 [build]
 include_config_on_deploy = true
