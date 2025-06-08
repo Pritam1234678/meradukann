@@ -1,0 +1,37 @@
+{% comment %}
+  This is the main file for our banner.
+  It's an "app embed" block, which means store owners can
+  turn it on or off from the theme editor.
+{% endcomment %}
+
+<div class="promo-banner">
+  🎉 Free Shipping on All Orders! 🎉
+</div>
+
+<style>
+  .promo-banner {
+    background-color: #007bff; /* A nice, friendly blue */
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    /* This is the magic to stick it to the very top of the page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* This ensures it stays on top of other content */
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Promotional Banner",
+  "target": "body",
+  "stylesheet": "style.css",
+  "javascript": "script.js"
+}
+{% endschema %}
